@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>NetCook</title>
-        <link rel="stylesheet" href="https://cdn2-jsdelivr.pages.dev/main/bootstrap@5.3.3/css/bootstrap.min.css" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn2-jsdelivr.pages.dev/main/fontawesome_pro@6.6.0/css/all.css" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn2-jsdelivr.pages.dev/main/netcook@1.0.0/css/style_2.css" crossorigin="anonymous" />
-    </head>
-
-    <body class="d-flex align-items-center py-4 bg-dark text-white text-center">
-        <div class="container">
-            <i class="fa-regular fa-face-grin-beam-sweat fa-bounce" style="font-size: 80px;"></i>
-            <div class="mt-4">
-                <h4><b>Information</b></h4>
-                <p><b>This domain service has been moved to netcook.web.id</b></p>
-                <p id="countdownText"><b>You will be automatically redirected to the new domain in 10 seconds</b></p>
-            </div>
-        </div>
-
-        <script src="https://cdn2-jsdelivr.pages.dev/main/bootstrap@5.3.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn2-jsdelivr.pages.dev/main/netcook@1.0.0/js/noclick.js" crossorigin="anonymous"></script>
-        <script src="https://cdn2-jsdelivr.pages.dev/main/netcook@1.0.0/js/script.js" crossorigin="anonymous"></script>
-        <script>
-            let countdown = 10;
-            const countdownText = document.getElementById("countdownText");
-
-            const interval = setInterval(function () {
-                countdown--;
-                countdownText.innerHTML = `<b>You will be automatically redirected to the new domain in ${countdown} seconds</b>`;
-                if (countdown === 0) {
-                    clearInterval(interval);
-                    window.location.href = "https://netcook.web.id";
-                }
-            }, 1000);
-        </script>
-    </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>NetCook</title>
+      <link rel="stylesheet" href="https://cdn2-jsdelivr.pages.dev/main/bootstrap@5.3.3/css/bootstrap.min.css" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdn2-jsdelivr.pages.dev/main/fontawesome_pro@6.6.0/css/all.css" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdn2-jsdelivr.pages.dev/main/netcook@1.0.0/css/style_2.css" crossorigin="anonymous" />
+      <style>
+         code {
+         font-size: inherit;
+         }
+         h4 {
+         margin-bottom: 0.5rem;
+         }
+         p {
+         margin: 0.3rem 0;
+         }
+      </style>
+   </head>
+   <body class="d-flex align-items-center py-4 bg-dark text-white text-center">
+      <div class="container">
+         <i class="fa-duotone fa-solid fa-circle-info fa-bounce" style="font-size: 80px;"></i>
+         <div class="mt-4">
+            <h4><b>Important Information</b></h4>
+            <p><b><span style="color: #f0ad4e;">Notice:</span></b> The current domain <code>app2.dn-project.biz.id</code> will be deactivated on <code>09-11-2024</code></p>
+            <p><b><span style="color: #5bc0de;">New Address:</span></b> This service has moved to a new domain at <code>netcook.web.id</code></p>
+            <p id="countdownText"><b>You will be automatically redirected to the new domain in 20 seconds.</b></p>
+         </div>
+      </div>
+      <script src="https://cdn2-jsdelivr.pages.dev/main/bootstrap@5.3.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdn2-jsdelivr.pages.dev/main/netcook@1.0.0/js/noclick.js" crossorigin="anonymous"></script>
+      <script src="https://cdn2-jsdelivr.pages.dev/main/netcook@1.0.0/js/script.js" crossorigin="anonymous"></script>
+      <script>
+         let countdown = 20;
+         const countdownText = document.getElementById("countdownText");
+         
+         const interval = setInterval(function () {
+             countdown--;
+             countdownText.innerHTML = `<b>You will be automatically redirected to the new domain in ${countdown} seconds</b>`;
+             if (countdown === 0) {
+                 clearInterval(interval);
+                 window.location.href = "https://netcook.web.id";
+             }
+         }, 1000);
+      </script>
+   </body>
 </html>
